@@ -1,7 +1,5 @@
 # Secure ML Data Screening
 
-## Name: Peter Hofley
-
 This project focuses on securing training data for ML systems against data poisoning and adversarial attacks.
 
 ## Project Structure
