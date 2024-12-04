@@ -1,7 +1,7 @@
 import subprocess
 
 def run_module(module):
-    result = subprocess.run(["python", module], check=True)
+    result = subprocess.run(["python3", module], check=True)
     if result.returncode == 0:
         print(f"{module} executed successfully.")
 
