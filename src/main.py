@@ -7,13 +7,13 @@ def run_module(module):
 
 if __name__ == "__main__":
     modules = [
-        "./data_preprocessing/integrity_check.py",
-        "./anomaly_detection/isolation_forest.py",
-        "./anomaly_detection/autoencoder_detect.py",
-        "./data_preprocessing/label_validation.py"
+        "src/data_preprocessing/integrity_check.py",
+        "src/anomaly_detection/isolation_forest.py",
+        "src/anomaly_detection/autoencoder_detect.py",
+        "src/data_preprocessing/label_validation.py"
     ]
 
     for module in modules:
         run_module(module)
-    print("Data screening workflow completed successfully.")
+    print("\n----------------------------------------------Data screening workflow completed successfully.\n----------------------------------------------")
 

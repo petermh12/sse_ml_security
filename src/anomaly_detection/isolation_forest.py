@@ -44,3 +44,4 @@ if __name__ == "__main__":
                 print(f"Filtered data saved to 'data/processed/training/training_{file}'.")
             except Exception as e:
                 print(f"Error processing file {file}: {e}")
+    print("Anomaly detection workflow completed successfully.\n\n")

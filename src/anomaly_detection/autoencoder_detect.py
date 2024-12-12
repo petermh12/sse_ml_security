@@ -50,3 +50,4 @@ if __name__ == "__main__":
         df_filtered.to_csv(f"data/processed/post_autoencoder/cleaned_autoencoder_{file_name}", index=False)
         print(f"Cleaned data saved to 'data/processed/post_autoencoder/cleaned_autoencoder_{file_name}'.")
 
+    print("Autoencoder detection workflow completed successfully.\n\n")

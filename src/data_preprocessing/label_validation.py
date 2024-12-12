@@ -1,9 +1,14 @@
 import pandas as pd
+import os
 
-def label_consistency_check(df, label_column='label'):
-    print("Checking label consistency...")
-    label_counts = df[label_column].value_counts()
-    print(f"Label distribution:\n{label_counts}")
+def label_consistency_check(df, file, label_column='label'):
+    print(f"\nChecking label consistency in {file}...")
+    try:
+        label_counts = df[label_column].value_counts()
+        print(f"Label distribution:\n{label_counts}")
+    except KeyError:
+        print(f"Error: Label column '{label_column}' not found in {file}.")
+        return
     
     # Check for class imbalance
     imbalance_ratio = label_counts.min() / label_counts.max()
@@ -13,6 +18,9 @@ def label_consistency_check(df, label_column='label'):
         print("Label distribution appears normal.")
 
 if __name__ == "__main__":
-    df = pd.read_csv("../../data/processed/cleaned_training_data.csv")
-    label_consistency_check(df)
+    print("\n\n---------------------Final Step: Label Validation-------------------------\n\n")
+    for file in os.listdir("data/processed/training"):
+        df = pd.read_csv(f"data/processed/training/{file}")
+        labels=label_consistency_check(df, file)
 
+    print("Label validation workflow completed successfully.\n\n")

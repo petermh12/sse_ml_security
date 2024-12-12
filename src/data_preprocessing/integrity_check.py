@@ -47,3 +47,4 @@ if __name__ == "__main__":
             df_clean.to_csv(f"data/processed/cleaned/cleaned_{file}", index=False)
             rows, columns = df_clean.shape
             print(f"Cleaned data saved to 'data/processed/cleaned/cleaned_data.csv'.\nRows: {rows}, Columns: {columns}")
+    print("Data screening workflow completed successfully.\n\n")
