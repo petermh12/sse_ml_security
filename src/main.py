@@ -15,5 +15,5 @@ if __name__ == "__main__":
 
     for module in modules:
         run_module(module)
-    print("\n----------------------------------------------Data screening workflow completed successfully.\n----------------------------------------------")
+    print("\n--------------------Data screening workflow completed successfully.----------------------\n")
 

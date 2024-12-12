@@ -7,7 +7,7 @@ def label_consistency_check(df, file, label_column='label'):
         label_counts = df[label_column].value_counts()
         print(f"Label distribution:\n{label_counts}")
     except KeyError:
-        print(f"Error: Label column '{label_column}' not found in {file}.")
+        print(f"Label column '{label_column}' not found in {file}.")
         return
     
     # Check for class imbalance
@@ -19,8 +19,8 @@ def label_consistency_check(df, file, label_column='label'):
 
 if __name__ == "__main__":
     print("\n\n---------------------Final Step: Label Validation-------------------------\n\n")
-    for file in os.listdir("data/processed/training"):
-        df = pd.read_csv(f"data/processed/training/{file}")
+    for file in os.listdir("data/processed/post_autoencoder"):
+        df = pd.read_csv(f"data/processed/post_autoencoder/{file}")
         labels=label_consistency_check(df, file)
 
     print("Label validation workflow completed successfully.\n\n")

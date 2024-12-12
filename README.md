@@ -14,3 +14,6 @@ This project focuses on securing training data for ML systems against data poiso
 1. Install dependencies:
    ```bash
    pip install -r requirements.txt
+
+2. To run from uppermost directory level:
+   python3 src/main.py
