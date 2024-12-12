@@ -1,0 +1,76 @@
+index,question,answer,anomaly
+0,"hi, how are you doing?",i'm fine. how about yourself?,-1
+1,i'm fine. how about yourself?,i'm pretty good. thanks for asking.,-1
+2,i'm pretty good. thanks for asking.,no problem. so how have you been?,-1
+3,no problem. so how have you been?,i've been great. what about you?,-1
+4,i've been great. what about you?,i've been good. i'm in school right now.,-1
+5,i've been good. i'm in school right now.,what school do you go to?,-1
+6,what school do you go to?,i go to pcc.,-1
+7,i go to pcc.,do you like it there?,-1
+8,do you like it there?,it's okay. it's a really big campus.,-1
+9,it's okay. it's a really big campus.,good luck with school.,-1
+10,good luck with school.,thank you very much.,-1
+11,how's it going?,i'm doing well. how about you?,-1
+12,i'm doing well. how about you?,"never better, thanks.",-1
+13,"never better, thanks.",so how have you been lately?,-1
+14,so how have you been lately?,i've actually been pretty good. you?,-1
+15,i've actually been pretty good. you?,i'm actually in school right now.,-1
+16,i'm actually in school right now.,which school do you attend?,-1
+17,which school do you attend?,i'm attending pcc right now.,-1
+18,i'm attending pcc right now.,are you enjoying it there?,-1
+19,are you enjoying it there?,it's not bad. there are a lot of people there.,-1
+20,it's not bad. there are a lot of people there.,good luck with that.,-1
+21,good luck with that.,thanks.,-1
+22,how are you doing today?,i'm doing great. what about you?,-1
+23,i'm doing great. what about you?,"i'm absolutely lovely, thank you.",-1
+24,"i'm absolutely lovely, thank you.",everything's been good with you?,-1
+25,everything's been good with you?,i haven't been better. how about yourself?,-1
+26,i haven't been better. how about yourself?,i started school recently.,-1
+27,i started school recently.,where are you going to school?,-1
+28,where are you going to school?,i'm going to pcc.,-1
+29,i'm going to pcc.,how do you like it so far?,-1
+30,how do you like it so far?,i like it so far. my classes are pretty good right now.,-1
+31,i like it so far. my classes are pretty good right now.,i wish you luck.,-1
+32,it's an ugly day today.,i know. i think it may rain.,-1
+33,i know. i think it may rain.,"it's the middle of summer, it shouldn't rain today.",-1
+34,"it's the middle of summer, it shouldn't rain today.",that would be weird.,-1
+35,that would be weird.,"yeah, especially since it's ninety degrees outside.",-1
+36,"yeah, especially since it's ninety degrees outside.","i know, it would be horrible if it rained and it was hot outside.",-1
+37,"i know, it would be horrible if it rained and it was hot outside.","yes, it would be. ",-1
+38,"yes, it would be. ",i really wish it wasn't so hot every day. ,-1
+39,i really wish it wasn't so hot every day. ,me too. i can't wait until winter.,-1
+40,me too. i can't wait until winter.,"i like winter too, but sometimes it gets too cold.",-1
+41,"i like winter too, but sometimes it gets too cold.",i'd rather be cold than hot.,-1
+42,i'd rather be cold than hot.,me too.,-1
+3693,what's the matter?,i was on a plane.,-1
+3694,i was on a plane.,so?,-1
+3695,so?,"so, every time the plane goes up, my ear starts to hurt.",-1
+3696,"so, every time the plane goes up, my ear starts to hurt.",that's no good.,-1
+3697,that's no good.,"sometimes the pain goes away, and sometimes it doesn't.",-1
+3698,"sometimes the pain goes away, and sometimes it doesn't.",have you seen a doctor?,-1
+3699,have you seen a doctor?,i've been to two doctors.,-1
+3700,i've been to two doctors.,and they couldn't fix your problem?,-1
+3701,and they couldn't fix your problem?,they both said i have to live with it.,-1
+3702,they both said i have to live with it.,or you can stay off planes.,-1
+3703,did you see the woman with the new face?,did she get a nice job?,-1
+3704,did she get a nice job?,"she got an ""everything"" job!",-1
+3705,"she got an ""everything"" job!",what do you mean?,-1
+3706,what do you mean?,a team of doctors gave her a whole new face.,-1
+3707,a team of doctors gave her a whole new face.,why did they do that?,-1
+3708,why did they do that?,a mad dog bit most of her face off.,-1
+3709,a mad dog bit most of her face off.,"oh, that's terrible. what does she look like now?",-1
+3710,"oh, that's terrible. what does she look like now?","her face is really fat, but they say the swelling will go down.",-1
+3711,"her face is really fat, but they say the swelling will go down.",and then will she look normal again?,-1
+3712,and then will she look normal again?,i guess so.,-1
+3713,i guess so.,god bless modern medicine.,-1
+3714,there's something wrong with my right hand.,what's wrong with it?,-1
+3715,what's wrong with it?,it aches most of the time.,-1
+3716,it aches most of the time.,what do you think it is?,-1
+3717,what do you think it is?,i don't know. i think it's old age.,-1
+3718,i don't know. i think it's old age.,"if it's old age, why don't both of your hands hurt?",-1
+3719,"if it's old age, why don't both of your hands hurt?",that's a good question. maybe it's not old age.,-1
+3720,that's a good question. maybe it's not old age.,are you right-handed?,-1
+3721,are you right-handed?,yes. all my life.,-1
+3722,yes. all my life.,you're wearing out your right hand. stop using it so much.,-1
+3723,you're wearing out your right hand. stop using it so much.,but i do all my writing with my right hand.,-1
+3724,but i do all my writing with my right hand.,start typing instead. that way your left hand will do half the work.,-1
