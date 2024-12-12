@@ -70,6 +70,8 @@ if __name__ == "__main__":
 
     print("\n\n---------------------Next Step: Autoencoder-------------------------\n\n")
     for file in os.listdir("data/processed/training"):
+        if file == "sample.csv":
+            continue
         data, text_cols = load_and_preprocess(f"data/processed/training/{file}")
         print(f"\nProcessing file: {file}\n")
         anomalies = train_autoencoder(data)

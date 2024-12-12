@@ -39,6 +39,8 @@ def data_integrity_check(df):
 if __name__ == "__main__":
     print("\n\n---------------------First Step: Integrity Check-------------------------\n\n")
     for file in os.listdir("data/raw"):
+        if file == "sample.csv":
+            continue
         df = load_data(f"data/raw/{file}")
         if df.empty:
             print("No data loaded. Exiting...")

@@ -31,6 +31,8 @@ def detect_anomalies(df):
 if __name__ == "__main__":
     print("\n\n---------------------Next Step: Iso Forest-------------------------\n\n")
     for file in os.listdir("data/processed/cleaned"):
+        if file == "sample.csv":
+            continue
         filepath = f"data/processed/cleaned/{file}"
         if os.path.isfile(filepath):
             print(f"Processing file: {filepath}")

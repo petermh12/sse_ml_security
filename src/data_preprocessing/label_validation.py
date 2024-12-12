@@ -20,6 +20,8 @@ def label_consistency_check(df, file, label_column='label'):
 if __name__ == "__main__":
     print("\n\n---------------------Final Step: Label Validation-------------------------\n\n")
     for file in os.listdir("data/processed/post_autoencoder"):
+        if file == "sample.csv":
+            continue
         df = pd.read_csv(f"data/processed/post_autoencoder/{file}")
         labels=label_consistency_check(df, file)
 
