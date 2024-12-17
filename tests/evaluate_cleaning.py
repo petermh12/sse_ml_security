@@ -1,10 +1,9 @@
 import pandas as pd
 import argparse
-import os
 
 def evaluate_cleaning(poisoned_file, cleaned_file, poison_keywords):
     """
-    Evaluate the effectiveness of the data cleaning pipeline.
+    Evaluate the effectiveness of the data cleaning pipeline by comparing content.
 
     Args:
         poisoned_file (str): Path to the poisoned CSV file.
@@ -17,19 +16,25 @@ def evaluate_cleaning(poisoned_file, cleaned_file, poison_keywords):
     poisoned_df = pd.read_csv(poisoned_file)
     cleaned_df = pd.read_csv(cleaned_file)
 
-    # Identify poisoned rows
-    poisoned_indices = poisoned_df.index[
-        poisoned_df.apply(lambda row: any(kw in str(row).lower() for kw in poison_keywords), axis=1)
-    ]
-    detected_indices = poisoned_indices[~poisoned_indices.isin(cleaned_df.index)]
+    # Identify poisoned rows in the original data
+    def is_poisoned(row):
+        return any(kw in str(row).lower() for kw in poison_keywords)
 
-    num_poisoned = len(poisoned_indices)
-    num_detected = len(detected_indices)
+    poisoned_rows = poisoned_df[poisoned_df.apply(is_poisoned, axis=1)]
+    total_poisoned = len(poisoned_rows)
+
+    # Check how many poisoned rows are left in the cleaned data
+    remaining_poisoned_rows = cleaned_df[cleaned_df.apply(is_poisoned, axis=1)]
+    num_remaining_poisoned = len(remaining_poisoned_rows)
+
+    # Calculate removed rows
+    num_removed_poisoned = total_poisoned - num_remaining_poisoned
+    detection_rate = (num_removed_poisoned / total_poisoned) * 100 if total_poisoned > 0 else 0
 
     # Report results
-    print(f"Total Poisoned Samples: {num_poisoned}")
-    print(f"Detected and Removed: {num_detected}")
-    detection_rate = (num_detected / num_poisoned) * 100 if num_poisoned > 0 else 0
+    print(f"Total Poisoned Samples: {total_poisoned}")
+    print(f"Detected and Removed: {num_removed_poisoned}")
+    print(f"Remaining Poisoned Samples: {num_remaining_poisoned}")
     print(f"Detection Rate: {detection_rate:.2f}%")
     print("--------------------------------------")
 
