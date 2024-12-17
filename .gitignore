@@ -1,0 +1,12 @@
+data/**/*.csv
+
+# Ensure the parent directories are not ignored
+!data/
+!data/processed/
+!data/raw/
+
+# Optionally ignore other temporary or large files
+*.log
+*.tmp
+*.pyc
+__pycache__/
