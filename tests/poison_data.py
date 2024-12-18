@@ -25,7 +25,7 @@ def poison_data(input_file, output_file, poisoning_rate=0.1):
     print(f"Poisoning {num_rows_to_poison} rows ({poisoning_rate*100}% of total rows).")
 
     poisoned_indices = random.sample(range(len(df)), num_rows_to_poison)
-    poison_payloads = ["malicious_input", "attack_payload", "poisoned_data_sample"]
+    poison_payloads = ["Credit Card: 193472198328364", "attack_payload", "SSN: 123-45-6789", "Birthday: 01/01/1970", "Full Name: John Doe", "Credit Card: 1234567890123456", "password: mypassword", "SSN: 987-65-4321", "Birthday: 12/31/1999", "Full Name: Jane Smith"]
 
     for idx in poisoned_indices:
         for col in text_columns:

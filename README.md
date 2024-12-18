@@ -21,11 +21,11 @@ This project focuses on securing training data for ML systems against data poiso
 
 ## Testing
 
-1. **Run the following:** python3 tests/poison_data.py data/raw/{FILE_NAME}.csv tests/poisoned/poisoned_data.csv --rate 0.2
+1. **Run the following:** python3 tests/poison_data.py data/raw/{FILE_NAME}.csv data/poisoned/poisoned_data.csv --rate 0.2
    - This will poison the input file to a given percentage
 
 2. Run the main.py script with the poisoned data, with the results stored in data/processed/post_autoencoder
 
-3. **Run the following:** python3 tests/evaluate_cleaning.py tests/poisoned/poisoned_data.csv data/processed/post_autoencoder/cleaned_autoencoder_{FILE_NAME}.csv
+3. **Run the following:** python3 tests/evaluate_cleaning.py data/poisoned/poisoned_data.csv data/processed/post_autoencoder/cleaned_autoencoder_{FILE_NAME}.csv
    - This will test the poisoned file against the newly cleaned one to learn the effectiveness
 

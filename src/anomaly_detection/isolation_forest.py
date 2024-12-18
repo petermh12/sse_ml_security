@@ -3,6 +3,7 @@ import numpy as np
 from sklearn.ensemble import IsolationForest
 from sklearn.preprocessing import StandardScaler
 import os
+import random
 
 def detect_anomalies(df):
     print("Detecting anomalies using Isolation Forest...")
@@ -18,7 +19,7 @@ def detect_anomalies(df):
     df_scaled = scaler.fit_transform(numeric_data)
     
     # Fit Isolation Forest
-    isolation_forest = IsolationForest(contamination=0.02, random_state=42)
+    isolation_forest = IsolationForest(random_state=random.randint(0, 100))
     df['anomaly'] = isolation_forest.fit_predict(df_scaled)
     
     # Separate anomalies
