@@ -1,5 +1,4 @@
 data/**/*.csv
-tests/**/*.csv
 
 # Ensure the parent directories are not ignored
 !data/
