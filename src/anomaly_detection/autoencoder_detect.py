@@ -79,7 +79,6 @@ if __name__ == "__main__":
         df = pd.read_csv(f"data/processed/training/{file}")
         df_filtered = df[~anomalies]
         file_split= file.split("_")
-        print(file_split)
         file_name= file_split[2]
         df_filtered.to_csv(f"data/processed/post_autoencoder/cleaned_autoencoder_{file_name}", index=False)
         print(f"Cleaned data saved to 'data/processed/post_autoencoder/cleaned_autoencoder_{file_name}'.")
